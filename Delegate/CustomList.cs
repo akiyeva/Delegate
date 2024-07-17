@@ -14,8 +14,6 @@ namespace CustomListExample
             set => _items[index] = value;
         }
 
-        public int Count => _items.Length;
-
         public void Add(T item)
         {
             Array.Resize(ref _items, _items.Length + 1);
